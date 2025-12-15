@@ -26,7 +26,8 @@ if not api_key:
 
 # Gemini Configure karein
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel('gemini-1.5-flash')
+# Latest Gemini 2.5 Model use kar rahe hain
+model = genai.GenerativeModel('models/gemini-2.5-flash')
 
 # Tabs
 tab1, tab2, tab3 = st.tabs(["💰 Sarkari Yojna", "⚖️ Pocket Vakeel", "👁️ Notice Reader"])
